@@ -1,0 +1,561 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+}
+/* Header */
+header {
+    background-color: #123b63;
+    color: white;
+    padding: 20px 40px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5a623;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.brand-text h1 {
+    margin: 0 0 5px;
+    font-size: 30px;
+}
+
+.brand-text p {
+    margin: 0;
+    font-size: 15px;
+}
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0b2d4d;
+}
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        padding: 16px 25px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+        nav a:hover {
+            background-color: #f5a623;
+            color: #123b63;
+        }
+/* Banner */
+.banner {
+    width: 100%;
+    padding: 55px 20px;
+    text-align: center;
+    background-color: #f5a623;
+    color: white;
+}
+
+    .banner h2 {
+        margin: 0 0 12px;
+        font-size: 34px;
+    }
+
+    .banner p {
+        margin: 0;
+        font-size: 18px;
+        font-weight: bold;
+    }
+section:target {
+    scroll-margin-top: 20px;
+}
+/* main layout */
+main {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 25px;
+}
+/* Left menu */
+.left-menu {
+    width: 220px;
+    flex-shrink: 0;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    height: fit-content;
+}
+
+    .left-menu h3 {
+        margin-top: 0;
+        margin-bottom: 15px;
+        color: #123b63;
+    }
+
+    .left-menu a {
+        display: block;
+        padding: 12px 15px;
+        margin-bottom: 10px;
+        background-color: #eef3f7;
+        color: #123b63;
+        text-decoration: none;
+        border-radius: 6px;
+        transition: 0.3s;
+    }
+
+        .left-menu a:hover {
+            background-color: #123b63;
+            color: white;
+        }
+/* Main content */
+.main-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.main-content > section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.main-content h2 {
+    margin-top: 0;
+    color: #123b63;
+}
+/* Right aside */
+.right-aside {
+    width: 250px;
+    flex-shrink: 0;
+}
+
+    .right-aside section {
+        background-color: white;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    .right-aside h3 {
+        margin-top: 0;
+        color: #123b63;
+    }
+
+    .right-aside a {
+        display: block;
+        padding: 10px;
+        margin-bottom: 8px;
+        background-color: #eef3f7;
+        color: #123b63;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: 0.3s;
+    }
+
+        .right-aside a:hover {
+            background-color: #f5a623;
+            color: white;
+        }
+
+    .right-aside ul {
+        padding-left: 20px;
+    }
+
+    .right-aside li {
+        margin-bottom: 8px;
+    }
+    /*Course Card*/
+.course-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+.course-card {
+    background-color: #f8fafc;
+    padding: 20px;
+    border: 1px solid #e0e6eb;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+    .course-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    }
+.course-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #123b63;
+    color: white;
+    border-radius: 50%;
+    font-weight: bold;
+}
+.course-card h3 {
+    margin: 10px 0;
+    color: #123b63;
+}
+
+.course-card p {
+    line-height: 1.6;
+    font-size: 14px;
+}
+.course-card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #f5a623;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+    .course-card a:hover {
+        background-color: #123b63;
+    }
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+    table th {
+        background-color: #123b63;
+        color: white;
+        padding: 12px;
+        text-align: center;
+    }
+
+    table td {
+        padding: 12px;
+        border: 1px solid #ddd;
+        text-align: center;
+    }
+    /* Màu giữa các dòng */
+    table tbody tr:nth-child(even) {
+        background-color: #f2f6f9;
+    }
+
+    /* Rê chuột  */
+    table tbody tr:hover {
+        background-color: #dceaf5;
+    }
+.registration-form {
+    display: grid;
+    gap: 15px;
+}
+
+    .registration-form label {
+        font-weight: bold;
+        color: #123b63;
+    }
+
+    .registration-form input[type="text"],
+    .registration-form input[type="email"],
+    .registration-form input[type="tel"],
+    .registration-form select {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-size: 15px;
+        outline: none;
+    }
+        /* Khi click vào ô nhập */
+        .registration-form input:focus,
+        .registration-form select:focus {
+            border-color: #123b63;
+            box-shadow: 0 0 5px rgba(18, 59, 99, 0.3);
+        }
+
+        /* Khi nhập đúng */
+        .registration-form input:valid,
+        .registration-form select:valid {
+            border-color: #28a745;
+        }
+
+    /* Khi nhập sai */
+    .registration-form input:invalid {
+        border-color: #dc3545;
+    }
+
+/* Nhóm radio */
+.radio-group {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+    .radio-group label {
+        font-weight: normal;
+        color: #333;
+        cursor: pointer;
+    }
+
+    /* Radio được chọn */
+    .radio-group input[type="radio"]:checked + label {
+        color: #123b63;
+        font-weight: bold;
+    }
+
+/* Nút Register Now */
+.registration-form button {
+    width: fit-content;
+    padding: 12px 25px;
+    background-color: #f5a623;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+    .registration-form button:hover {
+        background-color: #123b63;
+    }
+/* Student Reviews */
+.reviews-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.review-card {
+    background-color: #f8fafc;
+    padding: 20px;
+    border: 1px solid #e0e6eb;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+    .review-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    .review-card img {
+        width: 70px;
+        height: 70px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-bottom: 10px;
+    }
+
+    .review-card h4 {
+        margin: 5px 0;
+        color: #123b63;
+    }
+
+    .review-card .stars {
+        color: #f5a623;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .review-card p {
+        margin: 0;
+        line-height: 1.6;
+        font-size: 14px;
+    }
+/*Footer */
+footer {
+    background-color: #123b63;
+    color: white;
+    padding: 25px 40px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+    footer h3 {
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    footer p {
+        margin: 5px 0;
+        line-height: 1.5;
+    }
+
+    footer a {
+        color: white;
+        text-decoration: none;
+    }
+
+        footer a:hover {
+            color: #f5a623;
+        }
+/* Responsive */
+
+/* Mặc định: màn nhỏ */
+main {
+    flex-direction: column;
+}
+
+.left-menu,
+.right-aside {
+    width: 100%;
+}
+
+.course-container {
+    grid-template-columns: 1fr;
+}
+
+.reviews-container {
+    grid-template-columns: 1fr;
+}
+
+/* Màn từ 768px trở lên */
+@media (min-width: 768px) {
+
+    main {
+        flex-direction: row;
+    }
+
+    .left-menu {
+        width: 220px;
+    }
+
+    .right-aside {
+        width: 250px;
+    }
+
+    .course-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .reviews-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Màn lớn */
+@media (min-width: 1200px) {
+
+    .course-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .reviews-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+/*Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    flex-shrink: 0;
+}
+
+.brand-text h1 {
+    margin: 0 0 5px;
+}
+
+.brand-text p {
+    margin: 0;
+}
+/*Nav*/
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+    nav a {
+        display: block;
+        transition: 0.3s;
+    }
+
+        nav a:hover {
+            transform: translateY(-2px);
+        }
+/* Header trên màn hình nhỏ */
+@media (max-width: 767px) {
+
+    header {
+        padding: 20px;
+    }
+
+    .brand-text h1 {
+        font-size: 24px;
+    }
+
+    .brand-text p {
+        font-size: 13px;
+    }
+
+    nav a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .banner h2 {
+        font-size: 26px;
+    }
+
+    .banner p {
+        font-size: 15px;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    .main-content > section {
+        padding: 18px;
+    }
+
+    footer {
+        padding: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
